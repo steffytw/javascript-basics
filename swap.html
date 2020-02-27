@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arithemetic Operation</title>
+        <style>
+            .body{
+                width: 40%;
+                height: 180px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <div class="body" style="background-color: silver" >
+            <table>
+                <tr>
+                    <td><label for="Num1">Num1</label></td>
+                    <td></td>
+                    <td><label for="Num2">Num2</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="Num1" placeholder="Enter a number"/></td>
+                    <td></td>
+                    <td><input type="text" id="Num2" placeholder="Enter a number"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="+" style="background: springgreen" onclick="add()"/>
+                    
+                    
+                        <input type="button" value="-" style="background: springgreen" onclick="sub()"/>
+                    
+                    
+                       <input type="button" value="*" style="background: springgreen" onclick="mul()"/>
+                    
+                    
+                        <input type="button" value="/" style="background: springgreen" onclick="div()"/>
+
+                        <input type="button" value="swap" style="background: springgreen" onclick="swap()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Result">Result</label></td>
+                </tr>
+                <tr>
+                        <td><input type="text" id="res" placeholder="RESULT"></td>
+                </tr>
+            </table>
+    
+
+            </div>
+
+        </div>
+        <ruby
+    </center>
+        <script>
+        
+        function add(){
+            var x=parseInt(document.getElementById("Num1").value);
+            var y=parseInt(document.getElementById("Num2").value);
+            var z=x+y;
+            document.getElementById("res").value =z;
+        }
+        function sub(){
+            var x=document.getElementById("Num1").value;
+            var y=document.getElementById("Num2").value;
+            var z=x-y;
+            document.getElementById("res").value =z;
+        }
+        function mul(){
+            var x=document.getElementById("Num1").value;
+            var y=document.getElementById("Num2").value;
+            var z=x*y;
+            document.getElementById("res").value =z;
+        }
+        function div(){
+            var x=document.getElementById("Num1").value;
+            var y=document.getElementById("Num2").value;
+            var z=x/y;
+            document.getElementById("res").value =z;
+        }
+        function swap(){
+            var x=document.getElementById("Num1").value;
+            var y=document.getElementById("Num2").value;
+            document.getElementById("Num1").value =y;
+            document.getElementById("Num2").value =x;
+        }
+
+        </script>
+
+    </body>
+</html>

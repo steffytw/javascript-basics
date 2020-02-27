@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vowels</title>
+</head>
+<body>
+	<script>
+		var name=prompt("Enter your name");
+		var count=0;
+			function names(name){
+				for(var i=0;i<=name.length;i++){
+
+					if (name[i]=="a"||name[i]=="e"||name[i]=="i"||name[i]=="o"||name[i]=="u") {
+							document.write(name[i]+" is a vowel","<br>");
+							count+=1;
+
+							
+					}else{
+							document.write(name[i]+" is a consonent","<br>");
+					}
+					
+				}
+				document.write("no of vowels"+count,"<br>");
+
+
+			}names(name);
+			
+			
+	</script>
+	
+
+</body>
+</html>

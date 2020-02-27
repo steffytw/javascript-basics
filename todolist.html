@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDoList</title>
+	<style>
+		.top{
+			width: 50%;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top" style="background-color: orange">
+		<center>
+		<table>
+			<tr>
+				<td><label for="fruits">fruits</label></td>
+				<td>
+					<select id="fruity">
+						<option>apple</option>
+						<option>orange</option>
+						<option>kiwi</option>
+						<option>cherry</option>
+						<option>mango</option>
+						<option>guava</option>
+					</select>
+				</td>
+				<td><input type="text" id="fruitzz" placeholder="Enter a fruit"></td>
+				<td><input type="button" value="add" onclick="add()" style="background-color: green"></td>
+				<td><input type="button" value="remove" onclick="remove()" style="background-color: green"></td>
+			</tr>
+		</table>
+		</center>
+	</div>
+	<script>
+		function add(){
+			var x = document.getElementById("fruitzz").value;
+       		var y = document.getElementById("fruity");
+       		var z=document.createElement("option");
+       		z.text=x;
+      		y.add(z);
+		}
+		function remove(){
+			var x = document.getElementById("fruitzz").value;
+       		var y = document.getElementById("fruity");
+       		var z=document.createElement("option");
+       		z.text=x;
+       		y.remove(z);
+		}
+		
+	</script>
+</body>
+</html>

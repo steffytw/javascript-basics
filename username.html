@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>username</title>
+	<style>
+		.main{
+			background-color: orange;
+			width: 50%;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<table>
+		<tr>
+			<td><label for="username">USERNAME/E-mail</label></td>
+			<td><input type="text" id="username" placeholder="Enter your name"><span id="name"></span></td>
+			
+		</tr>
+		<tr>
+			<td><label for="password">PASSWORD</label></td>
+			<td><input type="password" id="password" placeholder="password"><span id="pass"></span></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="submit" onclick="check()" style="background-color: green"></td>
+		</tr>
+	</table>
+</div>
+<script>
+	
+	 function check(){
+	 	var x=document.getElementById("username").value;
+	 	var y=document.getElementById("password").value;
+		var pattern=/[a-z0-9_%+]+@[a-z0-9+]+\.[a-z]{2,3}/;
+		var pat=/[a-z]{4}/;
+	 	var res1=x.match(pattern);
+	 	var res2=y.match(pats);
+	 	if (x!=res1) {
+	 		document.getElementById("name").innerHTML="username is not strong enough";
+	 	}else{
+	 		document.getElementById("name").innerHTML="username is strong enough";
+	 	}
+	 	if (y!=res2) {
+			document.getElementById("pass").innerHTML="password is not strong enough";
+	 	}else{
+	 		document.getElementById("pass").innerHTML="password is strong enough";
+	 	}
+	 }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		.main{
+			width: 40%;
+               height: 180px;
+               color: orange;
+                
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<div class="main" style="background-color: grey">
+		<table>
+			<tr>
+				<td><label for="Num1">Num1</label></td>
+				<td><input type="text" id="Num1" placeholder="Enter the first number"></td>
+				<td><label for="Num2">Num2</label></td>
+				<td></td>
+				<td><input type="text" id="Num2" placeholder="Enter the second number"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Divide" onclick="div()" style="background-color: green"></td>
+				<td><input type="button" value="Multiply" onclick="mul()" style="background-color: green"></td>
+			</tr>
+			<tr>
+                    <td><label for="Result">Result</label></td>
+                    <td><input type="text" id="res" placeholder="RESULT"></td>
+                </tr>
+                
+		</table>
+	</div>
+	<script src="cal1.js"></script>
+</center>
+</body>
+</html>
